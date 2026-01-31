@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – Help & FAQ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button onclick="copyText()">Copy</button>
+  <h1>Help & FAQ</h1>
+
+  <pre id="faqText">HELP & FAQ
+Last Updated: 12 January 2026
+
+Q1. What is MyBizzCard?
+A1. MyBizzCard is a business card management app that lets you scan, extract, and organize business card information using offline OCR and optional AI-powered recognition.
+
+Q2. What does the Free Plan include?
+A2. The Free Plan works mostly offline on your device. It includes offline business card scanning, QR code scanning, saving cropped cards, and manual card creation with limited monthly usage. It also includes a small number of lifetime AI-assisted scans.
+
+Q3. What are AI-assisted scans?
+A3. AI-assisted scans use artificial intelligence to improve recognition accuracy. Depending on the feature, the app sends either OCR text extracted on your device or a card image to OpenAI for processing. The extracted results are returned to your device.
+
+Q4. What is AI Pro?
+A4. AI Pro unlocks advanced AI-powered recognition, higher usage limits, premium features, and an ad-free experience.
+
+Q5. Is my data stored on MyBizzCard servers?
+A5. No. MyBizzCard does not store business card images, OCR text, or extracted contact data on its servers. Scanned results are saved only on your device unless you choose to export them.
+
+Q6. Can AI or OCR make mistakes?
+A6. Yes. OCR and AI recognition may sometimes be inaccurate. You should always review and verify all scanned information before saving, calling, emailing, or sharing it.
+
+Q7. Does the app show advertisements?
+A7. The current version of the app does not display third-party advertisements. If ads are introduced in the future, the Privacy Policy will be updated before they are enabled.
+
+Q8. How can I cancel or manage my subscription?
+A8. Subscriptions are managed through Google Play. You can cancel or manage your subscription at any time via:
+Google Play Store → Payments & Subscriptions → MyBizzCard.
+
+Q9. Is an internet connection required?
+A9. Offline features do not require an internet connection. AI-assisted features require an active internet connection.
+
+Q10. How can I contact support?
+A10. You can contact us at: mybizzcard@gmail.com
+
+Q11. Where can I read the Terms of Use and Privacy Policy?
+A11. Both documents are available inside the app under “Terms of Use” and “Privacy Policy”.</pre>
+</div>
+
+<script>
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Help & FAQ copied!");
+}
+</script>
+
+</body>
+</html>
