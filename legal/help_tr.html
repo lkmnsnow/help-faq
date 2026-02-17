@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – Yardım & SSS</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
 
+<div class="container">
+  <button onclick="copyText()">Kopyala</button>
+  <h1>Yardım & SSS</h1>
+
+  <pre id="faqText">YARDIM & SSS
+Son Güncelleme: 12 Ocak 2026
+
+S1. MyBizzCard nedir?
+C1. MyBizzCard; çevrimdışı OCR ve isteğe bağlı yapay zeka destekli tanıma kullanarak kartvizit bilgilerini taramanızı, çıkarmanızı ve düzenlemenizi sağlayan bir kartvizit yönetim uygulamasıdır.
+
+S2. Ücretsiz Plan neleri içerir?
+C2. Ücretsiz Plan çoğunlukla cihazınızda çevrimdışı çalışır. Çevrimdışı kartvizit tarama, QR kod tarama, kırpılmış kart kaydetme ve manuel kart oluşturmayı (aylık sınırlı kullanım ile) içerir. Ayrıca az sayıda ömür boyu AI destekli tarama hakkı içerir.
+
+S3. AI destekli taramalar nedir?
+C3. AI destekli taramalar, tanıma doğruluğunu artırmak için yapay zeka kullanır. Özelliğe bağlı olarak uygulama; cihazınızda çıkarılan OCR metnini veya kart görüntüsünü OpenAI’ye güvenli şekilde gönderir. Çıkarılan sonuçlar cihazınıza geri döner.
+
+S4. AI Pro nedir?
+C4. AI Pro; gelişmiş AI destekli tanıma, daha yüksek kullanım limitleri, premium özellikler ve reklamsız deneyim sağlar.
+
+S5. Verilerim MyBizzCard sunucularında saklanıyor mu?
+C5. Hayır. MyBizzCard, kart görüntülerini, OCR metnini veya çıkarılan iletişim verilerini sunucularında saklamaz. Tarama sonuçları, siz dışa aktarmayı seçmedikçe yalnızca cihazınızda kaydedilir.
+
+S6. AI veya OCR hata yapabilir mi?
+C6. Evet. OCR ve AI tanıma bazen hatalı olabilir. Kaydetmeden, aramadan, e-posta göndermeden veya paylaşmadan önce tüm taranan bilgileri her zaman kontrol etmeli ve doğrulamalısınız.
+
+S7. Uygulama reklam gösteriyor mu?
+C7. Uygulamanın mevcut sürümü üçüncü taraf reklam göstermez. Gelecekte reklam eklenirse, Gizlilik Politikası etkinleştirilmeden önce güncellenecektir.
+
+S8. Aboneliğimi nasıl iptal edebilir veya yönetebilirim?
+C8. Abonelikler Google Play üzerinden yönetilir. İstediğiniz zaman şu yoldan iptal edebilir veya yönetebilirsiniz:
+Google Play Store → Ödemeler ve abonelikler → MyBizzCard.
+
+S9. İnternet bağlantısı gerekli mi?
+C9. Çevrimdışı özellikler internet gerektirmez. AI destekli özellikler etkin bir internet bağlantısı gerektirir.
+
+S10. Destek ile nasıl iletişime geçebilirim?
+C10. Şu adresten bize ulaşabilirsiniz: mybizzzcard@gmail.com
+
+S11. Kullanım Şartları ve Gizlilik Politikası’nı nereden okuyabilirim?
+C11. Her iki doküman da uygulama içinde “Kullanım Şartları” ve “Gizlilik Politikası” altında mevcuttur.</pre>
+</div>
+
+<script>
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Yardım & SSS kopyalandı!");
+}
+</script>
+
+</body>
+</html>
