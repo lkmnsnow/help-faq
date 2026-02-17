@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – Aide & FAQ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
 
+<div class="container">
+  <button onclick="copyText()">Copier</button>
+  <h1>Aide & FAQ</h1>
+
+  <pre id="faqText">AIDE & FAQ
+Dernière mise à jour : 12 janvier 2026
+
+Q1. Qu’est-ce que MyBizzCard ?
+R1. MyBizzCard est une application de gestion de cartes de visite qui vous permet de scanner, d’extraire et d’organiser les informations des cartes grâce à l’OCR hors ligne et à une reconnaissance IA optionnelle.
+
+Q2. Que comprend le Plan Gratuit ?
+R2. Le Plan Gratuit fonctionne principalement hors ligne sur votre appareil. Il inclut le scan de cartes de visite hors ligne, le scan de QR code, la sauvegarde de cartes recadrées et la création manuelle de cartes avec une utilisation mensuelle limitée. Il inclut également un petit nombre de scans IA à vie.
+
+Q3. Que sont les scans assistés par IA ?
+R3. Les scans assistés par IA utilisent l’intelligence artificielle pour améliorer la précision. Selon la fonctionnalité, l’application envoie de manière sécurisée soit le texte OCR extrait sur votre appareil, soit une image de la carte à OpenAI pour traitement. Les résultats extraits sont renvoyés sur votre appareil.
+
+Q4. Qu’est-ce que AI Pro ?
+R4. AI Pro débloque une reconnaissance IA avancée, des limites d’utilisation plus élevées, des fonctionnalités premium et une expérience sans publicité.
+
+Q5. Mes données sont-elles stockées sur les serveurs de MyBizzCard ?
+R5. Non. MyBizzCard ne stocke pas sur ses serveurs les images de cartes, le texte OCR ou les données de contact extraites. Les résultats scannés sont enregistrés uniquement sur votre appareil, sauf si vous choisissez de les exporter.
+
+Q6. L’IA ou l’OCR peuvent-ils se tromper ?
+R6. Oui. L’OCR et la reconnaissance IA peuvent parfois être imprécis. Vous devez toujours relire et vérifier toutes les informations scannées avant d’enregistrer, d’appeler, d’envoyer un e-mail ou de partager.
+
+Q7. L’application affiche-t-elle des publicités ?
+R7. La version actuelle de l’application n’affiche pas de publicités tierces. Si des publicités sont introduites à l’avenir, la Politique de Confidentialité sera mise à jour avant leur activation.
+
+Q8. Comment annuler ou gérer mon abonnement ?
+R8. Les abonnements sont gérés via Google Play. Vous pouvez annuler ou gérer votre abonnement à tout moment via :
+Google Play Store → Paiements et abonnements → MyBizzCard.
+
+Q9. Une connexion Internet est-elle nécessaire ?
+R9. Les fonctionnalités hors ligne ne nécessitent pas de connexion Internet. Les fonctionnalités assistées par IA nécessitent une connexion Internet active.
+
+Q10. Comment contacter le support ?
+R10. Vous pouvez nous contacter à : mybizzzcard@gmail.com
+
+Q11. Où puis-je lire les Conditions d’utilisation et la Politique de Confidentialité ?
+R11. Les deux documents sont disponibles dans l’application sous « Conditions d’utilisation » et « Politique de Confidentialité ».</pre>
+</div>
+
+<script>
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Aide & FAQ copiée !");
+}
+</script>
+
+</body>
+</html>
