@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – 帮助与常见问题</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
 
+<div class="container">
+  <button onclick="copyText()">复制</button>
+  <h1>帮助与常见问题</h1>
+
+  <pre id="faqText">帮助与常见问题
+最后更新日期：2026年1月12日
+
+问题1：什么是 MyBizzCard？
+回答1：MyBizzCard 是一款名片管理应用，可通过离线 OCR 以及可选的 AI 识别功能来扫描、提取并整理名片信息。
+
+问题2：免费计划包含什么？
+回答2：免费计划主要在设备本地离线运行。它包含离线名片扫描、二维码扫描、保存裁剪后的名片、手动创建名片（带有每月使用限制）。同时还包含少量终身 AI 辅助扫描次数。
+
+问题3：什么是 AI 辅助扫描？
+回答3：AI 辅助扫描使用人工智能来提高识别准确性。根据功能不同，应用会安全发送设备上提取的 OCR 文本或名片图像到 OpenAI 进行处理，识别结果将返回到您的设备。
+
+问题4：什么是 AI Pro？
+回答4：AI Pro 解锁更高级的 AI 识别、更高的使用额度、付费功能以及无广告体验。
+
+问题5：我的数据会存储在 MyBizzCard 服务器上吗？
+回答5：不会。MyBizzCard 不会在其服务器上存储名片图像、OCR 文本或提取的联系人数据。扫描结果仅保存在您的设备上，除非您选择导出。
+
+问题6：AI 或 OCR 会出错吗？
+回答6：会。OCR 和 AI 识别是自动化技术，可能会产生错误。您应在保存、拨打电话、发送邮件或分享之前，始终检查并核对所有扫描信息。
+
+问题7：应用会显示广告吗？
+回答7：当前版本不显示第三方广告，也未集成任何广告网络。如果未来加入广告，将在启用前更新隐私政策。
+
+问题8：如何取消或管理订阅？
+回答8：订阅由 Google Play 管理。您可随时通过以下路径取消或管理：
+Google Play Store → 付款与订阅 → MyBizzCard。
+
+问题9：是否需要联网？
+回答9：离线功能不需要互联网连接。AI 辅助功能需要有效的互联网连接。
+
+问题10：如何联系支持？
+回答10：您可以通过以下邮箱联系我们：mybizzzcard@gmail.com
+
+问题11：在哪里可以阅读《使用条款》和《隐私政策》？
+回答11：两个文件都可在应用内的“使用条款”和“隐私政策”中查看。</pre>
+</div>
+
+<script>
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("已复制帮助与常见问题！");
+}
+</script>
+
+</body>
+</html>
