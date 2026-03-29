@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Bantuan & FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+  <button onclick="copyText()">Salin</button>
+  <h1>Bantuan & FAQ</h1>
+
+<pre id="faqText">BANTUAN & FAQ
+Pembaruan Terakhir: 12 Januari 2026
+
+T1. Apa itu MyBizzCard?
+J1. MyBizzCard adalah aplikasi manajemen kartu nama yang memungkinkan pemindaian offline dengan OCR dan pengenalan berbasis AI opsional untuk mengelola kontak.
+
+T2. Apa saja yang termasuk dalam Paket Gratis?
+J2. Paket Gratis berjalan sebagian besar offline di perangkat. Termasuk pemindaian kartu, pemindaian QR, penyimpanan kartu yang dipangkas, pembuatan kartu manual, serta sejumlah kecil pemindaian AI seumur hidup.
+
+T3. Apa yang dimaksud pemindaian berbasis AI?
+J3. Pemindaian AI meningkatkan akurasi. Aplikasi mengirim teks OCR atau gambar kartu ke OpenAI dan menerima hasil terstruktur.
+
+T4. Apa itu AI Pro?
+J4. AI Pro membuka pengenalan AI lanjut, batas penggunaan lebih tinggi, fitur premium, dan pengalaman tanpa iklan.
+
+T5. Apakah data saya disimpan di server?
+J5. Tidak. Gambar, teks OCR, dan data kontak hanya disimpan di perangkat Anda kecuali Anda mengekspornya.
+
+T6. Apakah AI/OCR bisa salah?
+J6. Ya. Selalu periksa data sebelum menyimpan, menelepon, mengirim email, atau berbagi.
+
+T7. Apakah aplikasi menampilkan iklan?
+J7. Versi saat ini tidak menampilkan iklan pihak ketiga. Jika iklan ditambahkan, Kebijakan Privasi akan diperbarui.
+
+T8. Bagaimana cara membatalkan langganan?
+J8. Kelola di:
+Google Play Store → Pembayaran & Langganan → MyBizzCard.
+
+T9. Apakah perlu koneksi internet?
+J9. Fitur offline tidak perlu internet; fitur AI perlu.
+
+T10. Bagaimana menghubungi dukungan?
+J10. Email: mybizzzcard@gmail.com
+
+T11. Di mana membaca Ketentuan & Privasi?
+J11. Kedua dokumen tersedia di dalam aplikasi pada menu “Ketentuan” dan “Kebijakan Privasi”.</pre>
+</div>
+
+<script>
+function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("Bantuan & FAQ disalin!");}
+</script>
+</body>
+</html>
