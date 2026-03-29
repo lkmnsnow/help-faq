@@ -2,13 +2,50 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>MyBizzCard – Ajuda & FAQ</title>
+<title>MyBizzCard – Ajuda &amp; FAQ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* ——— base styling ——— */
+body{
+    font-family: Arial, sans-serif;
+    background:#0d1117;
+    color:#ffffff;
+    padding:20px;
+    line-height:1.6;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#161b22;
+    padding:20px;
+    border-radius:10px;
+}
+button{
+    float:right;
+    background:#238636;
+    border:none;
+    padding:10px 14px;
+    color:#ffffff;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:14px;
+}
+button:hover{background:#2ea043;}
+h1{margin-top:0;}
+
+/* ——— NEW: allow wrapping inside <pre> ——— */
+pre{
+    white-space:pre-wrap;      /* keep manual line-breaks */
+    word-wrap:break-word;      /* wrap very long words/URLs */
+}
+</style>
 </head>
+
 <body>
 <div class="container">
   <button onclick="copyText()">Copiar</button>
-  <h1>Ajuda & FAQ</h1>
+  <h1>Ajuda &amp; FAQ</h1>
 
 <pre id="faqText">AJUDA & FAQ
 Última atualização: 12 de janeiro de 2026
@@ -36,7 +73,7 @@ R7. A versão atual não possui anúncios. Caso incluídos, a Política de Priva
 
 P8. Como cancelo minha assinatura?
 R8. Gerencie em:
-Google Play Store → Pagamentos e Assinaturas → MyBizzCard.
+Google Play Store → Pagamentos & Assinaturas → MyBizzCard.
 
 P9. Preciso de internet?
 R9. Recursos offline não; recursos IA sim.
@@ -44,12 +81,16 @@ R9. Recursos offline não; recursos IA sim.
 P10. Como falar com o suporte?
 R10. E-mail: mybizzzcard@gmail.com
 
-P11. Onde ler Termos e Privacidade?
+P11. Onde ler Termos & Privacidade?
 R11. Ambos estão no app em “Termos de Uso” e “Política de Privacidade”.</pre>
 </div>
 
 <script>
-function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("Ajuda & FAQ copiada!");}
+function copyText(){
+  const txt=document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(txt);
+  alert("Ajuda & FAQ copiada!");
+}
 </script>
 </body>
 </html>
