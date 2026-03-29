@@ -2,14 +2,50 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>MyBizzCard – Hilfe & FAQ</title>
+<title>MyBizzCard – Hilfe &amp; FAQ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- CSS identisch zum Original -->
+
+<style>
+/* Grund-Layout */
+body{
+    font-family: Arial, sans-serif;
+    background:#0d1117;
+    color:#ffffff;
+    padding:20px;
+    line-height:1.6;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#161b22;
+    padding:20px;
+    border-radius:10px;
+}
+button{
+    float:right;
+    background:#238636;
+    border:none;
+    padding:10px 14px;
+    color:#ffffff;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:14px;
+}
+button:hover{background:#2ea043;}
+h1{margin-top:0;}
+
+/*  NEU – lässt lange Zeilen im <pre> umbrechen  */
+pre{
+    white-space:pre-wrap;     /* erhält manuelle Zeilenumbrüche */
+    word-wrap:break-word;     /* bricht sehr lange Wörter/URLs um */
+}
+</style>
 </head>
+
 <body>
 <div class="container">
   <button onclick="copyText()">Kopieren</button>
-  <h1>Hilfe & FAQ</h1>
+  <h1>Hilfe &amp; FAQ</h1>
 
 <pre id="faqText">HILFE & FAQ
 Zuletzt aktualisiert: 12. Januar 2026
@@ -35,23 +71,23 @@ A6. Ja. Überprüfe alle erfassten Daten, bevor du sie speicherst, anrufst, mail
 F7. Enthält die App Werbung?
 A7. Aktuell nicht. Sollten zukünftig Anzeigen hinzukommen, wird die Datenschutzerklärung vorab aktualisiert.
 
-F8. Wie kündige oder verwalte ich mein Abo?
-A8. Abos verwaltest du in:
-Google Play Store → Zahlungen & Abos → MyBizzCard.
+F8. Wie verwalte oder kündige ich mein Abo?
+A8. Google Play Store → Zahlungen &amp; Abos → MyBizzCard.
 
 F9. Ist eine Internetverbindung nötig?
 A9. Offline-Funktionen benötigen kein Internet. KI-Funktionen schon.
 
 F10. Wie kontaktiere ich den Support?
-A10. Per E-Mail an: mybizzzcard@gmail.com
+A10. E-Mail: mybizzzcard@gmail.com
 
 F11. Wo finde ich Nutzungsbedingungen und Datenschutz?
 A11. Beide Dokumente findest du in der App unter „Nutzungsbedingungen“ bzw. „Datenschutz“.</pre>
 </div>
 
 <script>
-function copyText() {
-  navigator.clipboard.writeText(document.getElementById("faqText").innerText);
+function copyText(){
+  const txt=document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(txt);
   alert("Hilfe & FAQ kopiert!");
 }
 </script>
