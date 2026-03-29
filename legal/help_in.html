@@ -4,11 +4,48 @@
 <meta charset="UTF-8">
 <title>MyBizzCard – Bantuan & FAQ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* -------- existing styles (you can merge with your main CSS) -------- */
+body{
+    font-family: Arial, sans-serif;
+    background:#0d1117;
+    color:#ffffff;
+    padding:20px;
+    line-height:1.6;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#161b22;
+    padding:20px;
+    border-radius:10px;
+}
+button{
+    float:right;
+    background:#238636;
+    border:none;
+    padding:10px 14px;
+    color:#ffffff;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:14px;
+}
+button:hover{background:#2ea043;}
+h1{margin-top:0;}
+
+/* -------- NEW: make long lines wrap inside <pre> -------- */
+pre{
+    white-space:pre-wrap;      /* keep your manual line-breaks */
+    word-wrap:break-word;      /* wrap very long words / URLs */
+}
+</style>
 </head>
+
 <body>
 <div class="container">
   <button onclick="copyText()">Salin</button>
-  <h1>Bantuan & FAQ</h1>
+  <h1>Bantuan &amp; FAQ</h1>
 
 <pre id="faqText">BANTUAN & FAQ
 Pembaruan Terakhir: 12 Januari 2026
@@ -49,7 +86,11 @@ J11. Kedua dokumen tersedia di dalam aplikasi pada menu “Ketentuan” dan “K
 </div>
 
 <script>
-function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("Bantuan & FAQ disalin!");}
+function copyText(){
+  const txt=document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(txt);
+  alert("Bantuan & FAQ disalin!");
+}
 </script>
 </body>
 </html>
