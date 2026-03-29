@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Ajuda & FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+  <button onclick="copyText()">Copiar</button>
+  <h1>Ajuda & FAQ</h1>
+
+<pre id="faqText">AJUDA & FAQ
+Última atualização: 12 de janeiro de 2026
+
+P1. O que é o MyBizzCard?
+R1. MyBizzCard é um app de gestão de cartões de visita que permite escanear offline com OCR e, opcionalmente, reconhecer via IA para organizar contatos.
+
+P2. O que inclui o Plano Gratuito?
+R2. Funciona majoritariamente offline: escaneamento, QR Code, salvar cartões recortados, criação manual e algumas digitalizações IA vitalícias.
+
+P3. O que são digitalizações com IA?
+R3. A IA envia texto OCR ou imagem para a OpenAI e devolve dados estruturados para o dispositivo.
+
+P4. O que é AI Pro?
+R4. Desbloqueia reconhecimento IA avançado, limites maiores, recursos premium e experiência sem anúncios.
+
+P5. Meus dados ficam nos servidores?
+R5. Não. Imagens, textos OCR e contatos permanecem somente no seu dispositivo, salvo exportação.
+
+P6. IA/OCR podem errar?
+R6. Sim. Revise antes de salvar, ligar, enviar e-mail ou compartilhar.
+
+P7. O app mostra anúncios?
+R7. A versão atual não possui anúncios. Caso incluídos, a Política de Privacidade será atualizada.
+
+P8. Como cancelo minha assinatura?
+R8. Gerencie em:
+Google Play Store → Pagamentos e Assinaturas → MyBizzCard.
+
+P9. Preciso de internet?
+R9. Recursos offline não; recursos IA sim.
+
+P10. Como falar com o suporte?
+R10. E-mail: mybizzzcard@gmail.com
+
+P11. Onde ler Termos e Privacidade?
+R11. Ambos estão no app em “Termos de Uso” e “Política de Privacidade”.</pre>
+</div>
+
+<script>
+function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("Ajuda & FAQ copiada!");}
+</script>
+</body>
+</html>
