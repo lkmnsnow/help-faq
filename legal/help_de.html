@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Hilfe & FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS identisch zum Original -->
+</head>
+<body>
+<div class="container">
+  <button onclick="copyText()">Kopieren</button>
+  <h1>Hilfe & FAQ</h1>
+
+<pre id="faqText">HILFE & FAQ
+Zuletzt aktualisiert: 12. Januar 2026
+
+F1. Was ist MyBizzCard?
+A1. MyBizzCard ist eine Visitenkarten-App, mit der du Karten offline per OCR scannen und optional per KI verarbeiten sowie Kontakte organisieren kannst.
+
+F2. Was enthält der Gratis-Plan?
+A2. Der Gratis-Plan läuft überwiegend offline auf deinem Gerät. Er bietet Offline-Scan, QR-Code-Scan, Speicherung zugeschnittener Karten und manuelle Kartenerstellung mit begrenzter monatlicher Nutzung sowie eine kleine Anzahl lebenslanger KI-Scans.
+
+F3. Was sind KI-Scans?
+A3. KI-Scans verbessern die Erkennung mithilfe künstlicher Intelligenz. Je nach Funktion sendet die App OCR-Text oder ein Kartenbild an OpenAI und erhält strukturierte Daten zurück.
+
+F4. Was ist AI Pro?
+A4. AI Pro schaltet erweiterte KI-Erkennung, höhere Limits, Premium-Funktionen und eine werbefreie Nutzung frei.
+
+F5. Speichert MyBizzCard meine Daten?
+A5. Nein. Bilder, OCR-Texte und Kontaktdaten werden nicht auf Servern gespeichert, sondern nur lokal auf deinem Gerät, es sei denn, du exportierst sie.
+
+F6. Können KI oder OCR Fehler machen?
+A6. Ja. Überprüfe alle erfassten Daten, bevor du sie speicherst, anrufst, mailst oder teilst.
+
+F7. Enthält die App Werbung?
+A7. Aktuell nicht. Sollten zukünftig Anzeigen hinzukommen, wird die Datenschutzerklärung vorab aktualisiert.
+
+F8. Wie kündige oder verwalte ich mein Abo?
+A8. Abos verwaltest du in:
+Google Play Store → Zahlungen & Abos → MyBizzCard.
+
+F9. Ist eine Internetverbindung nötig?
+A9. Offline-Funktionen benötigen kein Internet. KI-Funktionen schon.
+
+F10. Wie kontaktiere ich den Support?
+A10. Per E-Mail an: mybizzzcard@gmail.com
+
+F11. Wo finde ich Nutzungsbedingungen und Datenschutz?
+A11. Beide Dokumente findest du in der App unter „Nutzungsbedingungen“ bzw. „Datenschutz“.</pre>
+</div>
+
+<script>
+function copyText() {
+  navigator.clipboard.writeText(document.getElementById("faqText").innerText);
+  alert("Hilfe & FAQ kopiert!");
+}
+</script>
+</body>
+</html>
