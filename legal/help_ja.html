@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – ヘルプ & FAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+  <button onclick="copyText()">コピー</button>
+  <h1>ヘルプ & FAQ</h1>
+
+<pre id="faqText">ヘルプ & FAQ
+最終更新日: 2026年1月12日
+
+Q1. MyBizzCard とは？
+A1. MyBizzCard は名刺をオフライン OCR でスキャンし、必要に応じて AI 認識で整理できる名刺管理アプリです。
+
+Q2. 無料プランの内容は？
+A2. 無料プランは主に端末内で動作し、名刺スキャン、QR スキャン、トリミング保存、手動作成、さらに少数の生涯 AI スキャンが含まれます。
+
+Q3. AI スキャンとは？
+A3. AI スキャンは認識精度を高める機能で、OCR テキストまたは名刺画像を OpenAI に送り、結果を受け取ります。
+
+Q4. AI Pro とは？
+A4. AI Pro は高度な AI 認識、利用上限の拡大、プレミアム機能、広告非表示を提供します。
+
+Q5. データはサーバーに保存されますか？
+A5. いいえ。画像・OCR テキスト・連絡先は端末にのみ保存され、エクスポートしない限りサーバーには保存されません。
+
+Q6. AI/OCR は誤認識しますか？
+A6. はい。保存・発信・共有の前に必ず確認してください。
+
+Q7. 広告は表示されますか？
+A7. 現行バージョンでは広告はありません。将来導入時にはプライバシーポリシーを更新します。
+
+Q8. サブスクリプションの管理方法は？
+A8. Google Play ストア → お支払いと定期購入 → MyBizzCard で管理・解約できます。
+
+Q9. インターネット接続は必要？
+A9. オフライン機能は不要ですが、AI 機能には接続が必要です。
+
+Q10. サポート窓口は？
+A10. Email: mybizzzcard@gmail.com
+
+Q11. 利用規約とプライバシーはどこ？
+A11. アプリ内の「利用規約」「プライバシーポリシー」に掲載しています。</pre>
+</div>
+
+<script>
+function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("ヘルプ & FAQ をコピーしました！");}
+</script>
+</body>
+</html>
