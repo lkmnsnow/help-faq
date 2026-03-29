@@ -2,13 +2,50 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>MyBizzCard – ヘルプ & FAQ</title>
+<title>MyBizzCard – ヘルプ &amp; FAQ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* ——— base styling ——— */
+body{
+    font-family: Arial, sans-serif;
+    background:#0d1117;
+    color:#ffffff;
+    padding:20px;
+    line-height:1.6;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#161b22;
+    padding:20px;
+    border-radius:10px;
+}
+button{
+    float:right;
+    background:#238636;
+    border:none;
+    padding:10px 14px;
+    color:#ffffff;
+    cursor:pointer;
+    border-radius:6px;
+    font-size:14px;
+}
+button:hover{background:#2ea043;}
+h1{margin-top:0;}
+
+/* ——— NEW: allow wrapping inside <pre> ——— */
+pre{
+    white-space:pre-wrap;      /* keep manual line-breaks */
+    word-wrap:break-word;      /* wrap very long words/URLs */
+}
+</style>
 </head>
+
 <body>
 <div class="container">
   <button onclick="copyText()">コピー</button>
-  <h1>ヘルプ & FAQ</h1>
+  <h1>ヘルプ &amp; FAQ</h1>
 
 <pre id="faqText">ヘルプ & FAQ
 最終更新日: 2026年1月12日
@@ -38,7 +75,7 @@ Q8. サブスクリプションの管理方法は？
 A8. Google Play ストア → お支払いと定期購入 → MyBizzCard で管理・解約できます。
 
 Q9. インターネット接続は必要？
-A9. オフライン機能は不要ですが、AI 機能には接続が必要です。
+Q9. オフライン機能は不要ですが、AI 機能には接続が必要です。
 
 Q10. サポート窓口は？
 A10. Email: mybizzzcard@gmail.com
@@ -48,7 +85,11 @@ A11. アプリ内の「利用規約」「プライバシーポリシー」に掲
 </div>
 
 <script>
-function copyText(){navigator.clipboard.writeText(document.getElementById("faqText").innerText);alert("ヘルプ & FAQ をコピーしました！");}
+function copyText(){
+  const txt=document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(txt);
+  alert("ヘルプ & FAQ をコピーしました！");
+}
 </script>
 </body>
 </html>
