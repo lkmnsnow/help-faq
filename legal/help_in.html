@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MyBizzCard – Bantuan & FAQ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-/* -------- existing styles (you can merge with your main CSS) -------- */
-body{
+  body {
     font-family: Arial, sans-serif;
-    background:#0d1117;
-    color:#ffffff;
-    padding:20px;
-    line-height:1.6;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#161b22;
-    padding:20px;
-    border-radius:10px;
-}
-button{
-    float:right;
-    background:#238636;
-    border:none;
-    padding:10px 14px;
-    color:#ffffff;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:14px;
-}
-button:hover{background:#2ea043;}
-h1{margin-top:0;}
-
-/* -------- NEW: make long lines wrap inside <pre> -------- */
-pre{
-    white-space:pre-wrap;      /* keep your manual line-breaks */
-    word-wrap:break-word;      /* wrap very long words / URLs */
-}
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
 </style>
 </head>
-
 <body>
+
 <div class="container">
   <button onclick="copyText()">Salin</button>
-  <h1>Bantuan &amp; FAQ</h1>
+  <h1>Bantuan & FAQ</h1>
 
-<pre id="faqText">BANTUAN & FAQ
-Pembaruan Terakhir: 12 Januari 2026
+  <pre id="faqText">BANTUAN & FAQ
+Terakhir diperbarui: 12 Januari 2026
 
 T1. Apa itu MyBizzCard?
-J1. MyBizzCard adalah aplikasi manajemen kartu nama yang memungkinkan pemindaian offline dengan OCR dan pengenalan berbasis AI opsional untuk mengelola kontak.
+J1. MyBizzCard adalah aplikasi pengelolaan kartu nama yang memungkinkan Anda memindai, mengekstrak, mengedit, mengatur, menyimpan, dan mengelola informasi kartu nama menggunakan OCR offline dan pengenalan berbasis AI opsional.
 
 T2. Apa saja yang termasuk dalam Paket Gratis?
-J2. Paket Gratis berjalan sebagian besar offline di perangkat. Termasuk pemindaian kartu, pemindaian QR, penyimpanan kartu yang dipangkas, pembuatan kartu manual, serta sejumlah kecil pemindaian AI seumur hidup.
+J2. Paket Gratis sebagian besar bekerja secara offline di perangkat Anda. Paket ini mencakup pemindaian kartu nama offline, pemindaian kode QR, penyimpanan kartu yang dipotong, dan pembuatan kartu manual dengan batas penggunaan bulanan. Paket ini juga mencakup sejumlah kecil pemindaian berbantuan AI seumur hidup.
 
-T3. Apa yang dimaksud pemindaian berbasis AI?
-J3. Pemindaian AI meningkatkan akurasi. Aplikasi mengirim teks OCR atau gambar kartu ke OpenAI dan menerima hasil terstruktur.
+T3. Apa itu pemindaian berbantuan AI?
+J3. Pemindaian berbantuan AI menggunakan kecerdasan buatan untuk meningkatkan akurasi pengenalan. Bergantung pada fiturnya, aplikasi mengirimkan teks OCR yang diekstrak di perangkat Anda atau gambar kartu ke OpenAI untuk diproses. Hasil ekstraksi kemudian dikembalikan ke perangkat Anda.
 
 T4. Apa itu AI Pro?
-J4. AI Pro membuka pengenalan AI lanjut, batas penggunaan lebih tinggi, fitur premium, dan pengalaman tanpa iklan.
+J4. AI Pro membuka pengenalan canggih berbasis AI, batas penggunaan yang lebih tinggi, fitur premium, pemindaian batch, alat CRM batch, alat ekspor, alat penyimpanan ke buku telepon, dan pengalaman bebas iklan.
 
-T5. Apakah data saya disimpan di server?
-J5. Tidak. Gambar, teks OCR, dan data kontak hanya disimpan di perangkat Anda kecuali Anda mengekspornya.
+T5. Apa itu Batch Scan?
+J5. Batch Scan memungkinkan Anda memindai beberapa kartu nama ke dalam satu batch atau daftar bernama sehingga Anda dapat meninjau dan mengelolanya bersama.
 
-T6. Apakah AI/OCR bisa salah?
-J6. Ya. Selalu periksa data sebelum menyimpan, menelepon, mengirim email, atau berbagi.
+T6. Apa itu Batch CRM?
+J6. Batch CRM memungkinkan Anda mengelola prospek hasil pemindaian menggunakan alat seperti edit, tag, catatan, pengingat, filter, pemilihan, dan dukungan tindak lanjut di dalam aplikasi.
 
-T7. Apakah aplikasi menampilkan iklan?
-J7. Versi saat ini tidak menampilkan iklan pihak ketiga. Jika iklan ditambahkan, Kebijakan Privasi akan diperbarui.
+T7. Bisakah saya menyimpan kontak hasil pindai ke buku telepon?
+J7. Ya. Anda dapat menyimpan kontak individual atau kontak CRM yang dipilih ke buku telepon perangkat Anda. Tergantung perangkat Anda, Anda mungkin juga dapat memilih akun kontak, seperti penyimpanan perangkat, akun Google, atau akun SIM.
 
-T8. Bagaimana cara membatalkan langganan?
-J8. Kelola di:
-Google Play Store → Pembayaran & Langganan → MyBizzCard.
+T8. Bisakah saya mengekspor data hasil pindai saya?
+J8. Ya. Aplikasi dapat mengekspor data kontak yang dipilih sebagai CSV, Excel, atau VCF, tergantung pada fitur yang Anda gunakan.
 
-T9. Apakah perlu koneksi internet?
-J9. Fitur offline tidak perlu internet; fitur AI perlu.
+T9. Bisakah saya mengirim email dari aplikasi?
+J9. Aplikasi dapat membuka aplikasi email yang terpasang di perangkat Anda dengan alamat email yang dipilih untuk tindakan email tunggal atau batch. Pengiriman sebenarnya dilakukan oleh aplikasi email atau penyedia email Anda sendiri.
 
-T10. Bagaimana menghubungi dukungan?
-J10. Email: mybizzzcard@gmail.com
+T10. Apakah data saya disimpan di server MyBizzCard?
+J10. Tidak. MyBizzCard tidak menyimpan gambar kartu nama, teks OCR, data kontak yang diekstrak, catatan CRM, tag, pengingat, atau file hasil ekspor di servernya setelah pemrosesan. Hasil pindai hanya disimpan di perangkat Anda kecuali Anda memilih untuk mengekspor, membagikan, atau menyimpannya di tempat lain.
 
-T11. Di mana membaca Ketentuan & Privasi?
-J11. Kedua dokumen tersedia di dalam aplikasi pada menu “Ketentuan” dan “Kebijakan Privasi”.</pre>
+T11. Bisakah AI atau OCR membuat kesalahan?
+J11. Ya. OCR dan pengenalan AI terkadang bisa tidak akurat. Anda harus selalu meninjau dan memverifikasi semua informasi hasil pindai sebelum menyimpan, mengekspor, menelepon, mengirim email, atau membagikannya.
+
+T12. Apakah aplikasi menampilkan iklan?
+J12. Versi aplikasi saat ini tidak menampilkan iklan pihak ketiga. Jika iklan diperkenalkan di masa depan, Kebijakan Privasi akan diperbarui sebelum iklan tersebut diaktifkan.
+
+T13. Bagaimana cara membatalkan atau mengelola langganan saya?
+J13. Langganan dikelola melalui Google Play. Anda dapat membatalkan atau mengelola langganan Anda kapan saja melalui:
+Google Play Store → Payments & Subscriptions → MyBizzCard.
+
+T14. Apakah koneksi internet diperlukan?
+J14. Fitur offline tidak memerlukan koneksi internet. Fitur berbantuan AI memerlukan koneksi internet aktif.
+
+T15. Apakah saya memerlukan izin kontak atau izin menyimpan ke buku telepon?
+J15. Ya. Jika Anda ingin menyimpan kontak ke buku telepon Anda, aplikasi dapat meminta izin kontak di perangkat Anda.
+
+T16. Siapa yang bertanggung jawab atas cara saya menggunakan data kontak hasil pindai?
+J16. Anda bertanggung jawab untuk memastikan bahwa Anda memiliki hak untuk memindai, menyimpan, mengekspor, mengirim email, membagikan, atau menyimpan informasi kontak orang lain, serta mematuhi hukum yang berlaku bagi Anda.
+
+T17. Bagaimana cara menghubungi dukungan?
+J17. Anda dapat menghubungi kami di: mybizzzcard@gmail.com
+
+T18. Di mana saya bisa membaca Syarat Penggunaan dan Kebijakan Privasi?
+J18. Kedua dokumen tersedia di dalam aplikasi pada bagian “Syarat Penggunaan” dan “Kebijakan Privasi”.</pre>
 </div>
 
 <script>
-function copyText(){
-  const txt=document.getElementById("faqText").innerText;
-  navigator.clipboard.writeText(txt);
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
   alert("Bantuan & FAQ disalin!");
 }
 </script>
+
 </body>
 </html>
