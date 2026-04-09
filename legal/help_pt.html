@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<title>MyBizzCard – Ajuda &amp; FAQ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – Ajuda & FAQ</title>
 <style>
-/* ——— base styling ——— */
-body{
+  body {
     font-family: Arial, sans-serif;
-    background:#0d1117;
-    color:#ffffff;
-    padding:20px;
-    line-height:1.6;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#161b22;
-    padding:20px;
-    border-radius:10px;
-}
-button{
-    float:right;
-    background:#238636;
-    border:none;
-    padding:10px 14px;
-    color:#ffffff;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:14px;
-}
-button:hover{background:#2ea043;}
-h1{margin-top:0;}
-
-/* ——— NEW: allow wrapping inside <pre> ——— */
-pre{
-    white-space:pre-wrap;      /* keep manual line-breaks */
-    word-wrap:break-word;      /* wrap very long words/URLs */
-}
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
 </style>
 </head>
-
 <body>
+
 <div class="container">
   <button onclick="copyText()">Copiar</button>
-  <h1>Ajuda &amp; FAQ</h1>
+  <h1>Ajuda & FAQ</h1>
 
-<pre id="faqText">AJUDA & FAQ
+  <pre id="faqText">AJUDA & FAQ
 Última atualização: 12 de janeiro de 2026
 
 P1. O que é o MyBizzCard?
-R1. MyBizzCard é um app de gestão de cartões de visita que permite escanear offline com OCR e, opcionalmente, reconhecer via IA para organizar contatos.
+R1. O MyBizzCard é um aplicativo de gerenciamento de cartões de visita que permite digitalizar, extrair, editar, organizar, salvar e gerenciar informações de cartões usando OCR offline e reconhecimento opcional com IA.
 
-P2. O que inclui o Plano Gratuito?
-R2. Funciona majoritariamente offline: escaneamento, QR Code, salvar cartões recortados, criação manual e algumas digitalizações IA vitalícias.
+P2. O que está incluído no Plano Gratuito?
+R2. O Plano Gratuito funciona principalmente offline no seu dispositivo. Ele inclui digitalização offline de cartões de visita, leitura de códigos QR, salvamento de cartões recortados e criação manual de cartões com uso mensal limitado. Também inclui um pequeno número de digitalizações assistidas por IA ao longo da vida.
 
-P3. O que são digitalizações com IA?
-R3. A IA envia texto OCR ou imagem para a OpenAI e devolve dados estruturados para o dispositivo.
+P3. O que são digitalizações assistidas por IA?
+R3. As digitalizações assistidas por IA usam inteligência artificial para melhorar a precisão do reconhecimento. Dependendo do recurso, o aplicativo envia para a OpenAI o texto OCR extraído no seu dispositivo ou uma imagem do cartão para processamento. Os resultados extraídos são retornados ao seu dispositivo.
 
-P4. O que é AI Pro?
-R4. Desbloqueia reconhecimento IA avançado, limites maiores, recursos premium e experiência sem anúncios.
+P4. O que é o AI Pro?
+R4. O AI Pro desbloqueia reconhecimento avançado com IA, limites de uso mais altos, recursos premium, digitalização em lote, ferramentas de CRM em lote, ferramentas de exportação, ferramentas para salvar na agenda e uma experiência sem anúncios.
 
-P5. Meus dados ficam nos servidores?
-R5. Não. Imagens, textos OCR e contatos permanecem somente no seu dispositivo, salvo exportação.
+P5. O que é Digitalização em Lote?
+R5. A Digitalização em Lote permite digitalizar vários cartões de visita em um lote ou lista com nome para que você possa revisá-los e gerenciá-los juntos.
 
-P6. IA/OCR podem errar?
-R6. Sim. Revise antes de salvar, ligar, enviar e-mail ou compartilhar.
+P6. O que é o Batch CRM?
+R6. O Batch CRM permite gerenciar leads digitalizados usando ferramentas como editar, tags, notas, lembretes, filtros, seleção e suporte de acompanhamento dentro do aplicativo.
 
-P7. O app mostra anúncios?
-R7. A versão atual não possui anúncios. Caso incluídos, a Política de Privacidade será atualizada.
+P7. Posso salvar os contatos digitalizados na agenda do meu telefone?
+R7. Sim. Você pode salvar contatos individuais ou contatos de CRM selecionados na agenda do seu dispositivo. Dependendo do seu dispositivo, talvez também seja possível escolher a conta de contatos, como armazenamento do aparelho, conta Google ou conta SIM.
 
-P8. Como cancelo minha assinatura?
-R8. Gerencie em:
-Google Play Store → Pagamentos & Assinaturas → MyBizzCard.
+P8. Posso exportar meus dados digitalizados?
+R8. Sim. O aplicativo pode exportar os dados de contato selecionados como CSV, Excel ou VCF, dependendo do recurso utilizado.
 
-P9. Preciso de internet?
-R9. Recursos offline não; recursos IA sim.
+P9. Posso enviar e-mails pelo aplicativo?
+R9. O aplicativo pode abrir o aplicativo de e-mail instalado com os endereços selecionados para ações de e-mail individuais ou em lote. O envio real é feito pelo seu próprio aplicativo de e-mail ou provedor de e-mail.
 
-P10. Como falar com o suporte?
-R10. E-mail: mybizzzcard@gmail.com
+P10. Meus dados são armazenados nos servidores do MyBizzCard?
+R10. Não. O MyBizzCard não armazena imagens de cartões de visita, texto OCR, dados de contato extraídos, notas de CRM, tags, lembretes ou arquivos exportados em seus servidores após o processamento. Os resultados digitalizados são salvos apenas no seu dispositivo, a menos que você escolha exportá-los, compartilhá-los ou salvá-los em outro local.
 
-P11. Onde ler Termos & Privacidade?
-R11. Ambos estão no app em “Termos de Uso” e “Política de Privacidade”.</pre>
+P11. A IA ou o OCR podem cometer erros?
+R11. Sim. OCR e reconhecimento com IA às vezes podem ser imprecisos. Você deve sempre revisar e verificar todas as informações digitalizadas antes de salvar, exportar, ligar, enviar e-mails ou compartilhar.
+
+P12. O aplicativo mostra anúncios?
+R12. A versão atual do aplicativo não exibe anúncios de terceiros. Se anúncios forem introduzidos no futuro, a Política de Privacidade será atualizada antes de serem ativados.
+
+P13. Como posso cancelar ou gerenciar minha assinatura?
+R13. As assinaturas são gerenciadas pelo Google Play. Você pode cancelar ou gerenciar sua assinatura a qualquer momento em:
+Google Play Store → Payments & Subscriptions → MyBizzCard.
+
+P14. É necessária conexão com a internet?
+R14. Os recursos offline não exigem conexão com a internet. Os recursos assistidos por IA exigem uma conexão ativa com a internet.
+
+P15. Preciso de permissão para contatos ou para salvar na agenda?
+R15. Sim. Se você quiser salvar contatos na sua agenda, o aplicativo poderá solicitar permissões de contatos no seu dispositivo.
+
+P16. Quem é responsável por como eu uso os dados de contato digitalizados?
+R16. Você é responsável por garantir que tem o direito de digitalizar, salvar, exportar, enviar por e-mail, compartilhar ou armazenar as informações de contato de outra pessoa, bem como por cumprir as leis aplicáveis a você.
+
+P17. Como posso entrar em contato com o suporte?
+R17. Você pode entrar em contato conosco em: mybizzzcard@gmail.com
+
+P18. Onde posso ler os Termos de Uso e a Política de Privacidade?
+R18. Ambos os documentos estão disponíveis dentro do aplicativo em “Termos de Uso” e “Política de Privacidade”.</pre>
 </div>
 
 <script>
-function copyText(){
-  const txt=document.getElementById("faqText").innerText;
-  navigator.clipboard.writeText(txt);
-  alert("Ajuda & FAQ copiada!");
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Ajuda & FAQ copiados!");
 }
 </script>
+
 </body>
 </html>
