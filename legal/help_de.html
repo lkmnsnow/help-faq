@@ -1,95 +1,119 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>MyBizzCard – Hilfe &amp; FAQ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – Hilfe & FAQ</title>
 <style>
-/* Grund-Layout */
-body{
+  body {
     font-family: Arial, sans-serif;
-    background:#0d1117;
-    color:#ffffff;
-    padding:20px;
-    line-height:1.6;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#161b22;
-    padding:20px;
-    border-radius:10px;
-}
-button{
-    float:right;
-    background:#238636;
-    border:none;
-    padding:10px 14px;
-    color:#ffffff;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:14px;
-}
-button:hover{background:#2ea043;}
-h1{margin-top:0;}
-
-/*  NEU – lässt lange Zeilen im <pre> umbrechen  */
-pre{
-    white-space:pre-wrap;     /* erhält manuelle Zeilenumbrüche */
-    word-wrap:break-word;     /* bricht sehr lange Wörter/URLs um */
-}
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  h1 {
+    margin-top: 0;
+  }
 </style>
 </head>
-
 <body>
+
 <div class="container">
   <button onclick="copyText()">Kopieren</button>
-  <h1>Hilfe &amp; FAQ</h1>
+  <h1>Hilfe & FAQ</h1>
 
-<pre id="faqText">HILFE & FAQ
-Zuletzt aktualisiert: 12. Januar 2026
+  <pre id="faqText">HILFE & FAQ
+Letzte Aktualisierung: 12. Januar 2026
 
 F1. Was ist MyBizzCard?
-A1. MyBizzCard ist eine Visitenkarten-App, mit der du Karten offline per OCR scannen und optional per KI verarbeiten sowie Kontakte organisieren kannst.
+A1. MyBizzCard ist eine App zur Verwaltung von Visitenkarten, mit der du Visitenkarteninformationen per Offline-OCR und optionaler KI-gestützter Erkennung scannen, extrahieren, bearbeiten, organisieren, speichern und verwalten kannst.
 
-F2. Was enthält der Gratis-Plan?
-A2. Der Gratis-Plan läuft überwiegend offline auf deinem Gerät. Er bietet Offline-Scan, QR-Code-Scan, Speicherung zugeschnittener Karten und manuelle Kartenerstellung mit begrenzter monatlicher Nutzung sowie eine kleine Anzahl lebenslanger KI-Scans.
+F2. Was beinhaltet der kostenlose Plan?
+A2. Der kostenlose Plan funktioniert größtenteils offline auf deinem Gerät. Er umfasst das Offline-Scannen von Visitenkarten, das Scannen von QR-Codes, das Speichern zugeschnittener Karten und das manuelle Erstellen von Karten mit begrenzter monatlicher Nutzung. Außerdem sind einige KI-unterstützte Scans auf Lebenszeit enthalten.
 
-F3. Was sind KI-Scans?
-A3. KI-Scans verbessern die Erkennung mithilfe künstlicher Intelligenz. Je nach Funktion sendet die App OCR-Text oder ein Kartenbild an OpenAI und erhält strukturierte Daten zurück.
+F3. Was sind KI-unterstützte Scans?
+A3. KI-unterstützte Scans verwenden künstliche Intelligenz, um die Erkennungsgenauigkeit zu verbessern. Je nach Funktion sendet die App entweder auf deinem Gerät extrahierten OCR-Text oder ein Kartenbild zur Verarbeitung an OpenAI. Die extrahierten Ergebnisse werden an dein Gerät zurückgesendet.
 
 F4. Was ist AI Pro?
-A4. AI Pro schaltet erweiterte KI-Erkennung, höhere Limits, Premium-Funktionen und eine werbefreie Nutzung frei.
+A4. AI Pro schaltet fortschrittliche KI-gestützte Erkennung, höhere Nutzungslimits, Premium-Funktionen, Batch-Scans, Batch-CRM-Tools, Exportwerkzeuge, Telefonbuch-Speicherfunktionen und ein werbefreies Erlebnis frei.
 
-F5. Speichert MyBizzCard meine Daten?
-A5. Nein. Bilder, OCR-Texte und Kontaktdaten werden nicht auf Servern gespeichert, sondern nur lokal auf deinem Gerät, es sei denn, du exportierst sie.
+F5. Was ist Batch-Scan?
+A5. Mit Batch-Scan kannst du mehrere Visitenkarten in einen benannten Batch oder eine Liste scannen, damit du sie gemeinsam prüfen und verwalten kannst.
 
-F6. Können KI oder OCR Fehler machen?
-A6. Ja. Überprüfe alle erfassten Daten, bevor du sie speicherst, anrufst, mailst oder teilst.
+F6. Was ist Batch-CRM?
+A6. Mit Batch-CRM kannst du gescannte Leads mithilfe von Funktionen wie Bearbeiten, Tags, Notizen, Erinnerungen, Filtern, Auswählen und Follow-up-Unterstützung innerhalb der App verwalten.
 
-F7. Enthält die App Werbung?
-A7. Aktuell nicht. Sollten zukünftig Anzeigen hinzukommen, wird die Datenschutzerklärung vorab aktualisiert.
+F7. Kann ich gescannte Kontakte in meinem Telefonbuch speichern?
+A7. Ja. Du kannst einzelne Kontakte oder ausgewählte CRM-Kontakte in deinem Gerätetelefonbuch speichern. Je nach Gerät kannst du möglicherweise das Kontaktkonto wählen, z. B. Gerätespeicher, Google-Konto oder SIM-Konto.
 
-F8. Wie verwalte oder kündige ich mein Abo?
-A8. Google Play Store → Zahlungen &amp; Abos → MyBizzCard.
+F8. Kann ich meine gescannten Daten exportieren?
+A8. Ja. Die App kann ausgewählte Kontaktdaten je nach verwendeter Funktion als CSV, Excel oder VCF exportieren.
 
-F9. Ist eine Internetverbindung nötig?
-A9. Offline-Funktionen benötigen kein Internet. KI-Funktionen schon.
+F9. Kann ich E-Mails aus der App senden?
+A9. Die App kann deine installierte E-Mail-App mit ausgewählten E-Mail-Adressen für einzelne oder Batch-E-Mail-Aktionen öffnen. Das eigentliche Senden erfolgt über deine eigene E-Mail-App oder deinen E-Mail-Anbieter.
 
-F10. Wie kontaktiere ich den Support?
-A10. E-Mail: mybizzzcard@gmail.com
+F10. Werden meine Daten auf MyBizzCard-Servern gespeichert?
+A10. Nein. MyBizzCard speichert nach der Verarbeitung keine Bilder von Visitenkarten, OCR-Texte, extrahierte Kontaktdaten, CRM-Notizen, Tags, Erinnerungen oder exportierte Dateien auf seinen Servern. Gescannte Ergebnisse werden nur auf deinem Gerät gespeichert, es sei denn, du entscheidest dich, sie zu exportieren, zu teilen oder an einem anderen Ort zu speichern.
 
-F11. Wo finde ich Nutzungsbedingungen und Datenschutz?
-A11. Beide Dokumente findest du in der App unter „Nutzungsbedingungen“ bzw. „Datenschutz“.</pre>
+F11. Können KI oder OCR Fehler machen?
+A11. Ja. OCR- und KI-Erkennung können manchmal ungenau sein. Du solltest alle gescannten Informationen immer prüfen und verifizieren, bevor du sie speicherst, exportierst, anrufst, per E-Mail sendest oder teilst.
+
+F12. Zeigt die App Werbung an?
+A12. Die aktuelle Version der App zeigt keine Werbung von Drittanbietern an. Falls in Zukunft Werbung eingeführt wird, wird die Datenschutzerklärung vor der Aktivierung aktualisiert.
+
+F13. Wie kann ich mein Abonnement kündigen oder verwalten?
+A13. Abonnements werden über Google Play verwaltet. Du kannst dein Abonnement jederzeit hier kündigen oder verwalten:
+Google Play Store → Zahlungen & Abonnements → MyBizzCard.
+
+F14. Ist eine Internetverbindung erforderlich?
+A14. Offline-Funktionen benötigen keine Internetverbindung. KI-unterstützte Funktionen erfordern eine aktive Internetverbindung.
+
+F15. Benötige ich eine Berechtigung für Kontakte oder zum Speichern im Telefonbuch?
+A15. Ja. Wenn du Kontakte in deinem Telefonbuch speichern möchtest, kann die App auf deinem Gerät eine Kontakte-Berechtigung anfordern.
+
+F16. Wer ist dafür verantwortlich, wie ich gescannte Kontaktdaten verwende?
+A16. Du bist dafür verantwortlich sicherzustellen, dass du das Recht hast, die Kontaktinformationen einer anderen Person zu scannen, zu speichern, zu exportieren, per E-Mail zu senden, zu teilen oder zu sichern, und die für dich geltenden Gesetze einzuhalten.
+
+F17. Wie kann ich den Support kontaktieren?
+A17. Du kannst uns unter folgender Adresse kontaktieren: mybizzzcard@gmail.com
+
+F18. Wo kann ich die Nutzungsbedingungen und die Datenschutzerklärung lesen?
+A18. Beide Dokumente sind in der App unter „Nutzungsbedingungen“ und „Datenschutzerklärung“ verfügbar.</pre>
 </div>
 
 <script>
-function copyText(){
-  const txt=document.getElementById("faqText").innerText;
-  navigator.clipboard.writeText(txt);
+function copyText() {
+  const text = document.getElementById("faqText").innerText;
+  navigator.clipboard.writeText(text);
   alert("Hilfe & FAQ kopiert!");
 }
 </script>
+
 </body>
 </html>
