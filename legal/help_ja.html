@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>MyBizzCard – ヘルプ &amp; FAQ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyBizzCard – ヘルプ & FAQ</title>
 <style>
-/* ——— base styling ——— */
-body{
+  body {
     font-family: Arial, sans-serif;
-    background:#0d1117;
-    color:#ffffff;
-    padding:20px;
-    line-height:1.6;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#161b22;
-    padding:20px;
-    border-radius:10px;
-}
-button{
-    float:right;
-    background:#238636;
-    border:none;
-    padding:10px 14px;
-    color:#ffffff;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:14px;
-}
-button:hover{background:#2ea043;}
-h1{margin-top:0;}
-
-/* ——— NEW: allow wrapping inside <pre> ——— */
-pre{
-    white-space:pre-wrap;      /* keep manual line-breaks */
-    word-wrap:break-word;      /* wrap very long words/URLs */
-}
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.8;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  button:hover {
+    background: #2ea043;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    margin-top: 0;
+  }
 </style>
 </head>
-
 <body>
+
 <div class="container">
   <button onclick="copyText()">コピー</button>
-  <h1>ヘルプ &amp; FAQ</h1>
+  <h1>ヘルプ & FAQ</h1>
 
-<pre id="faqText">ヘルプ & FAQ
-最終更新日: 2026年1月12日
+  <pre id="faqText">ヘルプ & FAQ
+最終更新日：2026年1月12日
 
-Q1. MyBizzCard とは？
-A1. MyBizzCard は名刺をオフライン OCR でスキャンし、必要に応じて AI 認識で整理できる名刺管理アプリです。
+Q1. MyBizzCard とは何ですか？
+A1. MyBizzCard は、オフライン OCR と任意の AI 支援認識を使用して、名刺情報をスキャン、抽出、編集、整理、保存、管理できる名刺管理アプリです。
 
-Q2. 無料プランの内容は？
-A2. 無料プランは主に端末内で動作し、名刺スキャン、QR スキャン、トリミング保存、手動作成、さらに少数の生涯 AI スキャンが含まれます。
+Q2. 無料プランには何が含まれますか？
+A2. 無料プランは主に端末上でオフライン動作します。オフライン名刺スキャン、QR コードスキャン、切り抜きカードの保存、手動カード作成が月間利用上限付きで含まれます。また、生涯で使える少数の AI 支援スキャンも含まれます。
 
-Q3. AI スキャンとは？
-A3. AI スキャンは認識精度を高める機能で、OCR テキストまたは名刺画像を OpenAI に送り、結果を受け取ります。
+Q3. AI 支援スキャンとは何ですか？
+A3. AI 支援スキャンは、認識精度を向上させるために人工知能を使用します。機能に応じて、アプリは端末上で抽出された OCR テキスト、またはカード画像を OpenAI に送信して処理します。抽出結果は端末に返されます。
 
-Q4. AI Pro とは？
-A4. AI Pro は高度な AI 認識、利用上限の拡大、プレミアム機能、広告非表示を提供します。
+Q4. AI Pro とは何ですか？
+A4. AI Pro では、高度な AI 認識、より高い利用上限、プレミアム機能、バッチスキャン、バッチ CRM ツール、エクスポートツール、電話帳保存ツール、広告なしの体験が利用できます。
 
-Q5. データはサーバーに保存されますか？
-A5. いいえ。画像・OCR テキスト・連絡先は端末にのみ保存され、エクスポートしない限りサーバーには保存されません。
+Q5. バッチスキャンとは何ですか？
+A5. バッチスキャンでは、複数の名刺を名前付きのバッチまたはリストにまとめてスキャンし、一緒に確認・管理できます。
 
-Q6. AI/OCR は誤認識しますか？
-A6. はい。保存・発信・共有の前に必ず確認してください。
+Q6. Batch CRM とは何ですか？
+A6. Batch CRM では、編集、タグ、メモ、リマインダー、フィルター、選択、フォローアップ支援などの機能を使って、スキャンしたリードをアプリ内で管理できます。
 
-Q7. 広告は表示されますか？
-A7. 現行バージョンでは広告はありません。将来導入時にはプライバシーポリシーを更新します。
+Q7. スキャンした連絡先を電話帳に保存できますか？
+A7. はい。個別の連絡先や選択した CRM 連絡先を端末の電話帳に保存できます。端末によっては、端末ストレージ、Google アカウント、SIM アカウントなどの連絡先アカウントを選べる場合があります。
 
-Q8. サブスクリプションの管理方法は？
-A8. Google Play ストア → お支払いと定期購入 → MyBizzCard で管理・解約できます。
+Q8. スキャンしたデータをエクスポートできますか？
+A8. はい。使用する機能に応じて、選択した連絡先データを CSV、Excel、または VCF としてエクスポートできます。
 
-Q9. インターネット接続は必要？
-Q9. オフライン機能は不要ですが、AI 機能には接続が必要です。
+Q9. アプリからメールを送れますか？
+A9. アプリは、単一またはバッチのメール操作用に、選択したメールアドレスを使ってインストール済みのメールアプリを開くことができます。実際の送信は、ご自身のメールアプリまたはメールプロバイダーによって行われます。
 
-Q10. サポート窓口は？
-A10. Email: mybizzzcard@gmail.com
+Q10. 私のデータは MyBizzCard のサーバーに保存されますか？
+A10. いいえ。MyBizzCard は、処理後に名刺画像、OCR テキスト、抽出された連絡先データ、CRM メモ、タグ、リマインダー、またはエクスポートファイルをサーバーに保存しません。スキャン結果は、あなたがエクスポート、共有、または他の場所に保存することを選ばない限り、端末にのみ保存されます。
 
-Q11. 利用規約とプライバシーはどこ？
-A11. アプリ内の「利用規約」「プライバシーポリシー」に掲載しています。</pre>
-</div>
+Q11. AI や OCR は間違うことがありますか？
+A11. はい。OCR や AI 認識は不正確な場合があります。保存、エクスポート、電話、メール送信、共有の前に、必ずすべてのスキャン情報を確認してください。
 
-<script>
-function copyText(){
-  const txt=document.getElementById("faqText").innerText;
-  navigator.clipboard.writeText(txt);
-  alert("ヘルプ & FAQ をコピーしました！");
-}
-</script>
-</body>
-</html>
+Q12. アプリに広告は表示されますか？
+A12. 現在のバージョンのアプリには、第三者広告は表示されません。将来広告が導入される場合は、有効化前にプライバシーポリシーが更新されます。
+
+Q13. サブスクリプションを解約または管理するにはどうすればよいですか？
+A13. サブスクリプションは Google Play で管理されます。以下からいつでも解約または管理できます：
+Google Play Store → Payments & Subscriptions → MyBizzCard.
+
+Q14. インターネット接続は必要ですか？
+A14. オフライン機能にはインターネット接続は不要です。AI 支援機能には有効なインターネット接続が必要です。
+
+Q15. 連絡先権限や電話帳保存権限は必要ですか？
+A15. はい。電話帳に連絡先を保存したい場合、アプリは端末上で連絡先権限を要求することがあります。
+
+Q16. スキャンした連絡先データの使い方について誰が責任を負いますか？
+A16. 他人の連絡先情報をスキャン、保存、
